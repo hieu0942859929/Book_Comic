@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/imgSach"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/homeimage"
+            android:background="@drawable/edttextofitemsach"
+            ></ImageView>
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/tvChap"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentBottom="true"-->
+        <!--            android:layout_alignRight="@+id/imgSach"-->
+        <!--            android:gravity="center"-->
+        <!--            android:background="@drawable/tvchap"-->
+        <!--            android:textColor="#fff"-->
+        <!--            android:text="10"-->
+        <!--            android:textSize="20dp"></TextView>-->
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvTenSach"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Tên sách"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_gravity="center"></TextView>
+
+</LinearLayout>

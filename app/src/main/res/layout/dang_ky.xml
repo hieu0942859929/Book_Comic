@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1FB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Đăng ký"
+                android:textColor="@color/black"
+                android:textSize="50sp"></TextView>
+
+            <EditText
+                android:id="@+id/edttenTaiKhoan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvRegister"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="15dp"
+                android:hint="Tên tài khoản"
+                android:textColor="@color/black"
+                android:textColorHint="#D3D0D0"></EditText>
+
+            <EditText
+                android:id="@+id/edthoTen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edttenTaiKhoan"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="15dp"
+                android:hint="Họ Tên"
+                android:textColor="@color/black"
+                android:textColorHint="#D3D0D0"></EditText>
+
+            <EditText
+                android:id="@+id/edtemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edthoTen"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="15dp"
+                android:hint="Email"
+                android:textColor="@color/black"
+                android:textColorHint="#D3D0D0"></EditText>
+
+            <EditText
+                android:id="@+id/edtsdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtemail"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="15dp"
+                android:hint="Số điện thoại"
+                android:textColor="@color/black"
+                android:textColorHint="#D3D0D0"></EditText>
+
+            <EditText
+                android:id="@+id/edtmatKhau"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtsdt"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="15dp"
+                android:hint="Mật khẩu"
+                android:password="true"
+                android:textColor="@color/black"
+                android:textColorHint="#D3D0D0"></EditText>
+
+            <Button
+                android:id="@+id/btnRegisterOfRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtmatKhau"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="#F41D0D"
+                android:text="                                      Đăng ký                                     "></Button>
+
+            <Button
+                android:id="@+id/btnBack"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvRegister"
+                android:gravity="right"
+                android:text="x"
+                android:textSize="20sp"></Button>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

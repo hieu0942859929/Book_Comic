@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".sach.thongtinsach.ChiTietThongTinSach">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:onClick="back"
+                android:padding="15dp"
+                android:src="@drawable/ic_baseline_keyboard_return_24"
+                app:tint="#EA0A0A"></ImageView>
+
+            <ImageView
+                android:id="@+id/imgChiTietSach"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/homeimage"></ImageView>
+
+            <Button
+                android:id="@+id/btnDocSach"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgChiTietSach"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#FA1515"
+                android:text="Đọc Sách"></Button>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/linearTenSach"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/btnDocSach"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/tvtenSachChiTiet"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1.6"
+                    android:gravity="left"
+                    android:paddingRight="20dp"
+                    android:text="Tên sách:"
+                    android:textColor="#050505"
+                    android:textSize="20dp"></TextView>
+
+                <TextView
+                    android:id="@+id/tenSachChiTiet"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1.4"
+                    android:gravity="left"
+                    android:paddingLeft="20dp"
+                    android:textColor="#050505"
+                    android:textSize="20dp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/linearMaLoai"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/linearTenSach"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/tvmaLoaiSachChiTiet"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1.6"
+                    android:gravity="left"
+                    android:paddingRight="20dp"
+                    android:text="Thể Loại:"
+                    android:textColor="#050505"
+                    android:textSize="20dp"></TextView>
+
+                <TextView
+                    android:id="@+id/maLoaiSachChiTiet"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1.4"
+                    android:gravity="left"
+                    android:paddingLeft="20dp"
+                    android:textColor="#050505"
+                    android:textSize="20dp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/linearNgayPhatHanh"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/linearMaLoai"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/tvngayPhatHanhChiTiet"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1.6"
+                    android:gravity="left"
+                    android:paddingRight="20dp"
+                    android:text="Ngày phát hành:"
+                    android:textColor="#050505"
+                    android:textSize="20dp"></TextView>
+
+                <TextView
+                    android:id="@+id/ngayPhatHanhChiTiet"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1.4"
+                    android:gravity="left"
+                    android:paddingLeft="20dp"
+                    android:textColor="#050505"
+                    android:textSize="20dp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/linearTacGia"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/linearNgayPhatHanh"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/tvtacGiaChiTiet"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1.6"
+                    android:gravity="left"
+                    android:paddingRight="20dp"
+                    android:text="Tên tác giả:"
+                    android:textColor="#050505"
+                    android:textSize="20dp"></TextView>
+
+                <TextView
+                    android:id="@+id/tacGiaChiTiet"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1.4"
+                    android:gravity="left"
+                    android:paddingLeft="20dp"
+                    android:textColor="#050505"
+                    android:textSize="20dp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/linearNguoiDich"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/linearTacGia"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/tvnguoiDichChiTiet"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1.6"
+                    android:gravity="left"
+                    android:paddingRight="20dp"
+                    android:text="Người dịch:"
+                    android:textColor="#050505"
+                    android:textSize="20dp"></TextView>
+
+                <TextView
+                    android:id="@+id/nguoiDichChiTiet"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1.4"
+                    android:gravity="left"
+                    android:paddingLeft="20dp"
+                    android:textColor="#050505"
+                    android:textSize="20dp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/linearNoiDung"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/linearNguoiDich"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/tvnoiDungChiTiet"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1.6"
+                    android:gravity="left"
+                    android:paddingRight="20dp"
+                    android:text="Nội dung"
+                    android:textColor="#050505"
+                    android:textSize="20dp"></TextView>
+
+                <TextView
+                    android:id="@+id/noiDungChiTiet"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1.4"
+                    android:gravity="left"
+                    android:paddingLeft="20dp"
+                    android:textColor="#050505"
+                    android:textSize="20dp"></TextView>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/lvChuongSach"
+            android:layout_width="fill_parent"
+            android:layout_height="300dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:nestedScrollingEnabled="true" ></ListView>
+    </LinearLayout>
+</ScrollView>

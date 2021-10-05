@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">App Đọc Truyện - Sách</string>
+    <string name="nav_header_subtitle">Made by Nguyễn Trung Hiếu</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Sách</string>
+    <string name="menu_gallery">Truyện</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_bottom_navigation_menu">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_list">List</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string-array name="item_truyen">
+        <item>Thể Thao</item>
+        <item>Hành Động</item>
+        <item>Fantasy</item>
+        <item>Chuyển Sinh</item>
+        <item>Shounen</item>
+        <item>Trinh Thám</item>
+    </string-array>
+
+    <string-array name="item_theloai">
+        <item>Tâm Lý - Kỹ Năng Sống</item>
+        <item>Y Học - Sức Khỏe</item>
+        <item>Thể Thao - Nghệ Thuật</item>
+        <item>Tử Vi - Phong Thủy</item>
+        <item>Truyện Ngắn - Ngôn Tình</item>
+        <item>Học Ngoại Ngữ</item>
+    </string-array>
+
+    <string-array name="item_tacgia">
+        <item>Vương Trung Hiếu</item>
+        <item>Ts. Nguyễn Đức Quang</item>
+        <item>Nhiều Tác Giả</item>
+        <item>Nguyễn Văn Chung</item>
+        <item>James Allen</item>
+        <item>Christopher McDougall</item>
+        <item>Tác giả khác</item>
+    </string-array>
+</resources>
